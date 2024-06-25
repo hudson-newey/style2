@@ -1,0 +1,32 @@
+$theme-hue: 217deg;
+$theme-saturation: 60%;
+$theme-lightness: 50%;
+
+$primary-color: hsl($theme-hue, $theme-saturation, $theme-lightness);
+$secondary-color: hsl($theme-hue, $theme-saturation - 10%, $theme-lightness + 23%);
+$accent-color: hsl($theme-hue, 100%, $theme-lightness + 10%);
+$dark-color: hsl($theme-hue, $theme-saturation, $theme-lightness - 20%);
+$light-color: hsl($theme-hue, $theme-saturation, $theme-lightness + 20%);
+$success-color: hsl(120deg, 100%, 40%);
+$warning-color: hsl(40deg, 100%, 60%);
+$danger-color: hsl(0deg, 100%, 60%);
+$info-color: hsl(200deg, 100%, 40%);
+$white-color: hsl(0deg, 0%, 100%);
+$black-color: hsl(0deg, 0%, 0%);
+
+$background-color: hsl($theme-hue, $theme-saturation, 95%);
+$panel-color: hsl($theme-hue, $theme-saturation, 90%);
+$selected-color: hsl($theme-hue, $theme-saturation, 85%);
+$border-color: hsl($theme-hue, $theme-saturation, 80%);
+$text-color: hsl($theme-hue, $theme-saturation, 20%);
+$heading-color: hsl($theme-hue, $theme-saturation, 10%);
+$disabled-color: hsl($theme-hue, $theme-saturation, 70%);
+$placeholder-color: hsl($theme-hue, $theme-saturation, 60%);
+
+$box-shadow: 2px 2px 0.1em rgba($black-color, 0.2);
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$rounding: 12px;
+$spacing: 0.5em;
+$animation-time: 0.2s;

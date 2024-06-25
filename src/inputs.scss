@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+input,
+textarea,
+select {
+    border: 1px solid $border-color;
+    outline: none;
+    border-radius: $rounding;
+    padding: $spacing;
+    padding-left: $spacing * 2;
+    font-size: 1em;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+
+    &:focus:not(:disabled) {
+        border-color: $selected-color;
+        background-color: $background-color;
+    }
+}
+
+input[type="select"] {
+    padding-left: $spacing * 2;
+    padding-right: $spacing * 2;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    accent-color: $primary-color;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: none;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: $text-color;
+}

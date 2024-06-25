@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+form {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    padding: $spacing;
+    border: 1px solid $border-color;
+    border-radius: $rounding;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+}

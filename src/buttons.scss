@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+$variants: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    accent: $accent-color,
+    dark: $dark-color,
+    light: $light-color,
+    success: $success-color,
+    warning: $warning-color,
+    danger: $danger-color,
+    info: $info-color,
+    white: $white-color,
+    black: $black-color,
+);
+
+button {
+    background-color: $panel-color;
+    background-position: center;
+    padding: $spacing ($spacing * 2);
+    font-size: 1em;
+    border: none;
+    border-radius: $rounding;
+    outline: none;
+
+    box-shadow: $box-shadow;
+    transition: background $animation-time;
+
+    &:hover:not(:disabled) {
+        background: $selected-color radial-gradient(circle, transparent 1%, $selected-color 1%) center/15000%;
+        cursor: pointer;
+    }
+
+    &:active:not(:disabled) {
+        background-color: $panel-color;
+        background-size: 100%;
+        transition: background 0s;
+    }
+}
+
+button[type="submit"] {
+    @extend .primary;
+}
+
+@each $variant, $color in $variants {
+    button.#{$variant},
+    button[#{$variant}] {
+        background-color: $color;
+    }
+}

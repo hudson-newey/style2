@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style2</title>
+    <link rel="stylesheet" href="./src/index.scss">
+</head>
+
+<body>
+    <main>
+        <h1>Style2</h1>
+
+        <section class="elements">
+            <h2>Elements</h2>
+
+            <div>
+                <button>Default</button>
+                <button primary>Primary</button>
+                <button secondary>Secondary</button>
+                <button accent>Accent</button>
+                <button dark>Dark</button>
+                <button light>Light</button>
+                <button success>Success</button>
+                <button warning>Warning</button>
+                <button danger>Danger</button>
+                <button info>Info</button>
+                <button black>Black</button>
+                <button white>White</button>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Input" />
+                <input type="text" placeholder="Input (disabled)" disabled />
+            </div>
+
+            <div>
+                <textarea placeholder="Textarea" rows="6"></textarea>
+                <textarea placeholder="Textarea (disabled)" rows="6" disabled></textarea>
+            </div>
+
+            <div>
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+
+                <select disabled>
+                    <option value="1">Option 1 (disabled)</option>
+                    <option value="2">Option 2 (disabled)</option>
+                    <option value="3">Option 3 (disabled)</option>
+                </select>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    Checkbox
+                </label>
+
+                <label>
+                    <input type="checkbox" disabled />
+                    Checkbox (disabled)
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" name="radio" />
+                    Radio
+                </label>
+
+                <label>
+                    <input type="radio" name="radio" disabled />
+                    Radio (disabled)
+                </label>
+            </div>
+
+            <div>
+                <input type="range">
+
+                <input type="range" disabled>
+            </div>
+        </section>
+
+        <section>
+            <h2>Test Form</h2>
+
+            <div>
+                <form action="">
+                    <label>
+                        <span>First Name</span>
+                        <input type="text" placeholder="First Name" />
+                    </label>
+
+                    <label>
+                        <span>Last Name</span>
+                        <input type="text" placeholder="Last Name" />
+                    </label>
+
+                    <label>
+                        <span>Email</span>
+                        <input type="email" placeholder="Email" />
+                    </label>
+
+                    <label>
+                        <span>Password</span>
+                        <input type="password" placeholder="Password" />
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea placeholder="Message" rows="6"></textarea>
+                    </label>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        section>div {
+            display: block;
+            width: 100%;
+            margin: 0 1rem 1rem 0;
+        }
+    </style>
+</body>
+
+</html>
