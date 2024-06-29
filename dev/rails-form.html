@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>PURS Web Stack</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="csrf-param" content="authenticity_token" />
+        <meta
+            name="csrf-token"
+            content="LIHvlD-pNGdErlE6povB2IwAxUw9PCRRMBTKg9gtbgT4i5ylxLjJXSNedUQLibW-z9gQpOQNWeItChW7wU4A1w"
+        />
+        <link rel="stylesheet" href="../src/index.scss" />
+    </head>
+
+    <body>
+        <header>
+            <div class="purs-navbar">
+                <nav>
+                    <ul>
+                        <li class="website-title">
+                            <a href="/">goal-tracker</a>
+                        </li>
+
+                        <li><a href="/goals">goals</a></li>
+                        <li><a href="/todos">todos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <style>
+                .purs-navbar {
+                    nav {
+                        position: relative;
+                        left: 0px;
+                        top: 0px;
+                        width: 100%;
+                        background-color: #333;
+                        color: white;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    ul {
+                        display: flex;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    li {
+                        display: inline;
+                        padding-right: 1rem;
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .website-title {
+                        margin-right: 0.2rem;
+                        font-weight: bold;
+                    }
+                }
+            </style>
+
+            <header>
+                <h1>New goal</h1>
+
+                <form action="/goals" accept-charset="UTF-8" method="post">
+                    <input
+                        type="hidden"
+                        name="authenticity_token"
+                        value="F7sAM9wGEWYnhkF8RBI9skHGJv6wqEqtfL4FvgI3fx_O8R8pTIhdm6Khl0ZsLKPkeadYX7poHJybSjDAMnLWJw"
+                        autocomplete="off"
+                    />
+
+                    <div>
+                        <label style="display: block" for="goal_name">Name</label>
+                        <input type="text" name="goal[name]" id="goal_name" />
+                    </div>
+
+                    <div>
+                        <label style="display: block" for="goal_description">Description</label>
+                        <textarea name="goal[description]" id="goal_description"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" name="commit" value="Create Goal" data-disable-with="Create Goal" />
+                    </div>
+                </form>
+
+                <br />
+
+                <div>
+                    <a href="/goals">Back to goals</a>
+                </div>
+            </header>
+        </header>
+    </body>
+</html>

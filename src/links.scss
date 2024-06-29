@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "buttons.scss";
+
+// if links are not contained within a paragraph element, they should be displayed
+// as default buttons
+// if they are contained within a paragraph element, they should be displayed as
+// inline links and we should apply link styles to them
+
+a:not(p a, nav a) {
+    @extend button;
+}
+
+p a {
+    color: $primary-color;
+    text-decoration: underline;
+    margin-top: $spacing;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}

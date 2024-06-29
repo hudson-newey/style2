@@ -22,6 +22,8 @@ button {
     border: none;
     border-radius: $rounding;
     outline: none;
+    margin-top: $spacing;
+    width: fit-content;
 
     box-shadow: $box-shadow;
     transition: background $animation-time;
@@ -38,7 +40,8 @@ button {
     }
 }
 
-button[type="submit"] {
+button[type="submit"], input[type="submit"] {
+    @extend button;
     @extend .primary;
 }
 

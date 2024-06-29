@@ -14,5 +14,9 @@ html {
 
 body {
     width: 70%;
-    margin: 1rem auto;
+    margin: ($spacing * 2) auto;
+}
+
+div {
+    margin-top: $spacing;
 }

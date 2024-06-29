@@ -11,11 +11,17 @@ select {
     font-size: 1em;
     background-color: $background-color;
     box-shadow: $box-shadow;
+    width: 100%;
 
     &:focus:not(:disabled) {
         border-color: $selected-color;
         background-color: $background-color;
     }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 12em;
 }
 
 input[type="select"] {
@@ -41,10 +47,4 @@ input[type="range"] {
     background-color: transparent;
     cursor: pointer;
     user-select: none;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-    color: $text-color;
 }

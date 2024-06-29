@@ -1,4 +1,4 @@
-$theme-hue: 217deg;
+$theme-hue: 50deg;
 $theme-saturation: 60%;
 $theme-lightness: 50%;
 
@@ -23,10 +23,10 @@ $heading-color: hsl($theme-hue, $theme-saturation, 10%);
 $disabled-color: hsl($theme-hue, $theme-saturation, 70%);
 $placeholder-color: hsl($theme-hue, $theme-saturation, 60%);
 
-$box-shadow: 2px 2px 0.1em rgba($black-color, 0.2);
+$box-shadow: 2px 2px 0.5em rgba($black-color, 0.2);
 
 $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $rounding: 12px;
-$spacing: 0.5em;
+$spacing: 0.75em;
 $animation-time: 0.2s;

@@ -7,8 +7,13 @@ form {
     width: 100%;
     margin: 1rem 0;
     padding: $spacing;
-    border: 1px solid $border-color;
     border-radius: $rounding;
     background-color: $background-color;
     box-shadow: $box-shadow;
+}
+
+label {
+    display: block;
+    margin-top: $spacing * 2;
+    color: $text-color;
 }

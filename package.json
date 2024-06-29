@@ -1,19 +1,20 @@
 {
-  "name": "style2",
-  "version": "1.0.0",
-  "description": "A highly opinionated css framework designed for rapid prototyping",
-  "scripts": {
-    "dev": "vite . --host 0.0.0.0",
-    "build": "vite build"
-  },
-  "author": "hudson-newey",
-  "license": "MIT",
-  "dependencies": {
-    "vite": "^5.3.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss-nested": "^6.0.1",
-    "sass": "^1.77.6"
-  }
+    "name": "@hudson-newey/style2",
+    "private": true,
+    "version": "1.0.0",
+    "description": "A highly opinionated css framework designed for rapid prototyping",
+    "scripts": {
+        "dev": "vite . --host 0.0.0.0",
+        "build": "vite build"
+    },
+    "author": "hudson-newey",
+    "license": "MIT",
+    "dependencies": {
+        "vite": "^5.3.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss-nested": "^6.0.1",
+        "sass": "^1.77.6"
+    }
 }
